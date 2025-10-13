@@ -110,13 +110,13 @@ _IAM_ — это сервис для управления доступом в AW
    ```bash
    [ec2-user@ip-172-31-40-231 ~]$
    ``` 
-   !(images/1.png)
+   ![alt text](images/1.png)
 5. Выполнить команду для проверки статуса веб-сервера Nginx:
 
    ```bash
    systemctl status nginx
    ```
-   !(images/2.png)
+   ![alt text](images/2.png)
 * Почему в AWS нельзя использовать пароль для входа по SSH?
     Пароли считаются небезопасным методос входа, ключи являются более надежными. Паролько можно подобрать или угадать, а то времч как SSH-ключ очень длинный и угадать почти нельзя. Также ключи предотвращают автоматические атаки, например от различных ботов.
 
@@ -133,14 +133,14 @@ _IAM_ — это сервис для управления доступом в AW
     scp -i "C:\Users\pc\Desktop\uni\3rdYear\cloud_pem\tanya-keypair.pem"about.html ec2-user@52.59.215.241:/tmp 
     scp -i "C:\Users\pc\Desktop\uni\3rdYear\cloud_pem\tanya-keypair.pem"contact.html ec2-user@52.59.215.241:/tmp
    ``` 
-   !(images/4.png)
-   !(images/5.png)
+   ![alt text](images/4.png)
+   ![alt text](images/5.png)
 4. Проверка, что файлы успешно скопированы на сервер:
 
    ```bash
     ls -l /usr/share/nginx/html
    ```
-   !(images/3.png)
+   ![alt text](images/3.png)
 5. Открытие в браузере URL: `http://52.59.215.241/index.html` и наглядная демонстрация, что сайт работает.
 
 * Что делает команда `scp`?
@@ -160,3 +160,4 @@ scp - утилита безопасно копирует данные между
 * [Информация о Nginx](https://skillbox.ru/media/code/server-nginx-kak-on-rabotaet-i-kak-ego-nastroit/)
 * [Команда scp](https://reg.cloud/support/cloud/oblachnyye-servery/rabota-s-serverom/kopirovaniye-faylov-cherez-ssh?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com)
 * [ChatGPT](https://chatgpt.com/?model=auto)
+
