@@ -360,5 +360,14 @@ _Для всех инстансов использую_:
 
 Для того, чтобы кредины не снимались, то достаточно удалить EC2 инстансы, NAT Gateway и Elastic IP. Остальные ресурсы можно оставить, так как они не тарифицируются отдельно.
 
+### Вывод
 
+В ходе лабораторной работы я научилась создавать собственную виртуальную сеть в AWS и на практике разобралась, как устроена изоляция ресурсов внутри VPC. Я создала публичную и приватную подсети, настроила Internet Gateway и NAT Gateway, а также таблицы маршрутов, обеспечив корректный доступ веб-сервера в Интернет и защищённое подключение к серверу базы данных. Дополнительно были настроены группы безопасности и развёрнуты три EC2-инстанса с различными ролями (web, db и bastion host). В результате я поняла, как организуется архитектура облачной сети и взаимодействие ресурсов между собой, а также как управлять безопасным доступом к приватным серверам.
 
+### Использованные источники
+
+* [Инструкции по лабораторной](https://github.com/MSU-Courses/cloud-computing/blob/main/_lab/02_Compute_Services/readme.md](https://elearning.usm.md/mod/assign/view.php?id=316713))
+* [Информация о VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+* [Информация о NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html))
+* [Информация о subnets](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html))
+* [ChatGPT](https://chatgpt.com/?model=auto)
