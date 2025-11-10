@@ -177,11 +177,16 @@ _IAM_ — это сервис для управления доступом в AW
    `Stop` - это действие приведет к остановке виртуальной машины, но при этом она сохранится и ее можно будет снова запускать.
    `Terminate` - это действие приведет к останове и удалению виртуальной машиный и всех связанный ресурсов. То есть больше нельзя будет ее использовать и надо будет создавать новую.
 
+### Вывод
+
+В ходе лабораторной работы я познакомилась с основными вычислительными сервисами AWS и научилась создавать виртуальную машину EC2. Был настроен IAM-пользователь, установлен Zero-Spend Budget для контроля расходов, развернут веб-сервер nginx через User Data, а также выполнено подключение к инстансу по SSH. Дополнительно был загружен и опубликован простой статический сайт. В итоге я получила базовые навыки работы с EC2 и развертывания веб-приложений в облаке.
+
 ### Использованные источники
 
 * [Инструкции по лабораторной](https://github.com/MSU-Courses/cloud-computing/blob/main/_lab/02_Compute_Services/readme.md)
 * [Информация о Nginx](https://skillbox.ru/media/code/server-nginx-kak-on-rabotaet-i-kak-ego-nastroit/)
 * [Команда scp](https://reg.cloud/support/cloud/oblachnyye-servery/rabota-s-serverom/kopirovaniye-faylov-cherez-ssh?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com)
 * [ChatGPT](https://chatgpt.com/?model=auto)
+
 
 
