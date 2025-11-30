@@ -185,3 +185,6 @@ _Публичный бакет_:
 
 ### Использованные источники
 
+* [Инструкции по лабораторной](https://github.com/MSU-Courses/cloud-computing/tree/main/_lab/04_Cloud_Storage)
+* [Информация о Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+* [ChatGPT](https://chatgpt.com/?model=auto)
