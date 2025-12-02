@@ -101,12 +101,14 @@ dnf install -y mariadb105
 ```bash
 mysql -h <ENDPOINT> -u admin -p
 ```
+![alt text](images/7.png)
 
 Выбор БД:
 
 ```sql
 USE project_db;
 ```
+![alt text](images/8.png)
 
 ### Создала таблицы:
 
@@ -130,6 +132,7 @@ CREATE TABLE todos (
   FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 ```
+![alt text](images/8.png)
 
 ### Добавила записи:
 
@@ -141,6 +144,7 @@ VALUES
  ('Finish report', 'done', 2),
  ('Buy groceries', 'pending', 3);
 ```
+![alt text](images/9.png)
 
 ### Выполнила JOIN:
 
@@ -149,6 +153,7 @@ SELECT t.id, t.title, t.status, c.name AS category
 FROM todos t
 JOIN categories c ON t.category_id = c.id;
 ```
+![alt text](images/11.png)
 
 ### Шаг 5. Создание Read Replica
 
@@ -159,12 +164,14 @@ JOIN categories c ON t.category_id = c.id;
 - Storage: gp3
 - Public access: No
 - Security group: db-mysql-security-group
+![alt text](images/12.png)
 
 ### Подключилась к реплике:
 
 ```bash
 mysql -h <REPLICA_ENDPOINT> -u admin -p
 ```
+![alt text](images/13.png)
 
 ## Какие данные вы видите? Объясните почему.
 
@@ -191,7 +198,7 @@ SELECT * FROM categories;
 ```sql
 INSERT INTO categories (name) VALUES ('TestReplica');
 ```
-
+![alt text](images/14.png)
 Ошибка:
 
 ```
@@ -226,8 +233,10 @@ Read Replica предназначена **только для SELECT-запро�
 ```sql
 INSERT INTO categories (name) VALUES ('FromPrimary');
 ```
+![alt text](images/16.png)
 
 Затем снова проверила реплику:
+![alt text](images/17.png)
 
 Новая запись появилась — реплика получила изменения.
 
@@ -330,5 +339,6 @@ if ($action === 'read') {
 Работа позволила понять принципы работы облачных баз данных, сетевых конфигураций AWS и различия реляционных и нереляционных хранилищ.
 
 # Источники
+
 
 
