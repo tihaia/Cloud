@@ -98,7 +98,7 @@
 - AMI может включать несколько snapshotов.
 - AMI применяется для запуска новых серверов.
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ### Что такое image и чем он отличается от snapshot? Какие есть варианты использования AMI?
 
@@ -137,7 +137,7 @@ AMI можно использовать для:
 - Security Group,
 - включён мониторинг CloudWatch.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 **Зачем нужен Launch Template?**
 Чтобы Auto Scaling Group могла разворачивать одинаковые машины автоматически.
@@ -171,7 +171,7 @@ AMI можно использовать для:
 - тип: **Instances**
 - протокол: **HTTP**
 - порт: **80**
-  ![alt text](image-2.png)
+  ![alt text](images/image-2.png)
 
 ### Зачем необходим и какую роль выполняет Target Group?
 
@@ -197,7 +197,7 @@ Target Group - это группа серверов (EC2), на которые L
 - Security Group с разрешённым HTTP
 - Listener 80 → Target Group
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 Убедилась, что существуют связи между `Listeners`, `Rules` и `Target groups`.
 
@@ -259,11 +259,11 @@ Default Action - это действие, которое Listener Load Balancer 
 В **Additional settings** я включила сбор метрик CloudWatch.
 
 После проверки настроек я нажала **Create Auto Scaling group**.
-![alt text](image-5.png)
-![alt text](image-6.png)
-![alt text](image-7.png)
+![alt text](images/image-5.png)
+![alt text](images/image-6.png)
+![alt text](images/image-7.png)
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ### Почему для Auto Scaling Group выбираются приватные подсети?
 
@@ -353,3 +353,4 @@ Auto Scaling автоматически увеличил количество EC
 В ходе лабораторной работы была реализована полноценная схема балансировки нагрузки и автоматического масштабирования.
 Были изучены ключевые компоненты AWS: VPC, EC2, Load Balancer, Target Group, Auto Scaling и CloudWatch.
 Результат — создана архитектура, которая автоматически увеличивает количество серверов при росте нагрузки и распределяет входящие запросы между ними.
+
