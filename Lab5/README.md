@@ -304,7 +304,9 @@ if ($action === 'read') {
     $pdo = new PDO($writeDsn, $user, $pass);
 }
 ```
-
+![alt text](images/1.jpg)
+![alt text](images/2.jpg)
+![alt text](images/3.jpg)
 # Ответы на контрольные вопросы
 
 ### Что такое Subnet Group?
@@ -338,7 +340,9 @@ if ($action === 'read') {
 
 Работа позволила понять принципы работы облачных баз данных, сетевых конфигураций AWS и различия реляционных и нереляционных хранилищ.
 
-# Источники
+### Использованные источники
 
-
-
+* [Инструкции по лабораторной](https://elearning.usm.md/mod/assign/view.php?id=320200)
+* [Информация о Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+* [Информация о DynamoDB](https://en.wikipedia.org/wiki/Amazon_DynamoDB)
+* [ChatGPT](https://chatgpt.com/?model=auto)
